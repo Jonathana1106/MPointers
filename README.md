@@ -9,4 +9,5 @@ aplicación en C++. El objetivo principal será cómo sobrecargar operadores com
 Para facilitar la comprensión del problema, el proyecto se realizará en dos iteraciones.
 
 *Primera iteración: encapsulamiento de punteros de C++.
+
 *Segunda iteración: memoria distribuida.
