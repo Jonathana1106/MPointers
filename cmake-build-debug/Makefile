@@ -123,6 +123,33 @@ MPointers/fast:
 	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/build
 .PHONY : MPointers/fast
 
+MPointer/MPointer.o: MPointer/MPointer.cpp.o
+
+.PHONY : MPointer/MPointer.o
+
+# target to build an object file
+MPointer/MPointer.cpp.o:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o
+.PHONY : MPointer/MPointer.cpp.o
+
+MPointer/MPointer.i: MPointer/MPointer.cpp.i
+
+.PHONY : MPointer/MPointer.i
+
+# target to preprocess a source file
+MPointer/MPointer.cpp.i:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.i
+.PHONY : MPointer/MPointer.cpp.i
+
+MPointer/MPointer.s: MPointer/MPointer.cpp.s
+
+.PHONY : MPointer/MPointer.s
+
+# target to generate assembly for a file
+MPointer/MPointer.cpp.s:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.s
+.PHONY : MPointer/MPointer.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MPointers"
+	@echo "... MPointer/MPointer.o"
+	@echo "... MPointer/MPointer.i"
+	@echo "... MPointer/MPointer.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

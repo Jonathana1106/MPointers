@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/jonathan/CLionProjects/MPointers/MPointer/MPointer.cpp">
+			<Option target="MPointers"/>
+		</Unit>
 		<Unit filename="/home/jonathan/CLionProjects/MPointers/main.cpp">
 			<Option target="MPointers"/>
 		</Unit>
