@@ -1,7 +1,6 @@
-#include <iostream>
 #include "MPointer/MPointer.h"
 
-using namespace std;
+using namespace mpointer;
 
 int main() {
 

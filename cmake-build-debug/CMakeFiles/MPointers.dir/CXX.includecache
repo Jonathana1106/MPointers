@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/jonathan/CLionProjects/MPointers/MPointer/MPointer.h
+/home/jonathan/CLionProjects/Progra#1MPointers/MPointer/MPointer.h
 iostream
 -
 
-/home/jonathan/CLionProjects/MPointers/main.cpp
-iostream
--
+/home/jonathan/CLionProjects/Progra#1MPointers/main.cpp
 MPointer/MPointer.h
-/home/jonathan/CLionProjects/MPointers/MPointer/MPointer.h
+/home/jonathan/CLionProjects/Progra#1MPointers/MPointer/MPointer.h
 

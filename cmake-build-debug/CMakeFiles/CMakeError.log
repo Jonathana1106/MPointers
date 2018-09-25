@@ -1,0 +1,26 @@
+Detecting C [-std=c11] compiler features failed to compile with the following output:
+Change Dir: /home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d410f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d410f.dir/build.make CMakeFiles/cmTC_d410f.dir/build
+make[1]: Entering directory '/home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: *** No rule to make target '/home/jonathan/CLionProjects/Progra', needed by 'CMakeFiles/cmTC_d410f.dir/feature_tests.c.o'.  Stop.
+make[1]: Leaving directory '/home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d410f/fast' failed
+make: *** [cmTC_d410f/fast] Error 2
+
+
+
+Detecting CXX [-std=c++1z] compiler features failed to compile with the following output:
+Change Dir: /home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_89ff3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_89ff3.dir/build.make CMakeFiles/cmTC_89ff3.dir/build
+make[1]: Entering directory '/home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/CMakeFiles/CMakeTmp'
+make[1]: *** No rule to make target '/home/jonathan/CLionProjects/Progra', needed by 'CMakeFiles/cmTC_89ff3.dir/feature_tests.cxx.o'.  Stop.
+make[1]: Leaving directory '/home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_89ff3/fast' failed
+make: *** [cmTC_89ff3/fast] Error 2
+
+
+

@@ -1,4 +1,4 @@
-# Install script for directory: /home/jonathan/CLionProjects/MPointers
+# Install script for directory: /home/jonathan/CLionProjects/Progra#1MPointers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jonathan/CLionProjects/MPointers/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jonathan/CLionProjects/Progra#1MPointers/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
