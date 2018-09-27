@@ -1,16 +1,18 @@
 //
-// Created by jonathan on 21/09/18.
+// Created by elias on 27/09/18.
 //
 
-#ifndef MPOINTERS_MPOINTERS_H
-#define MPOINTERS_MPOINTERS_H
+#ifndef MPOINTERS_MPOINTER_H
+#define MPOINTERS_MPOINTER_H
 
+#include <cstdlib>
 #include <iostream>
 
 namespace mpointer {
-
-    using namespace std;
-
+/*
+    template<class T>
+    class MPointerGC;
+*/
     template<class T>
 /**
  * Clase que se encarga de crear un puntero de tipo template.
@@ -24,34 +26,31 @@ namespace mpointer {
          * Variables de la clase.
          */
 
-        T *ptr; // Puntero template.
 
-        int add; // Direccion de memoria
+        int ID; // Id dado por MPointerGC
 
     public:
+
+        T *ptr; // Puntero template.
+        MPointer<T> *mPointer1; // Puntero a la instancia.
 
         /**
          * Metodo que se encarga de asignar un espacio de memoria a un puntero segun su tipo.
          */
-        void New() {
-            ptr = (T *) malloc(sizeof(T));
-        }
+        MPointer<T> New();
+
 
         /**
          * Metodo que se encarga de asignar un valor a un puntero.
          * @param ptra
          */
-        void operator=(T ptra) {
-            *ptr = ptra;
-        }
+        void operator=(T ptra);
 
         /**
          * Metodo que se encarga de verificar si dos punteros son del mismo tipo.
          * @param mPointer
          */
-        void operator=(MPointer<T> mPointer) {
-            this->ptr = mPointer.ptr;
-        }
+        void operator=(MPointer<T> mPointer);
 
         //////////////////////////////////////////////////////////////////////////////
         /////////////////////////Caution//////////////////////////////////////////////
@@ -65,34 +64,49 @@ namespace mpointer {
          * Metodo que se encarga de mostrar el valor de un puntero.
          * No se necesita, solo para pruebas.
          */
-        void show() {
-            cout << "El dato es: ";
-            cout << *ptr;
-            cout << "\n";
-        }
+        void show();
 
         /**
          * Metodo que se encarga de devolver el valor de un puntero al usar &.
          * @return
          */
-        T operator&() {
-            return *ptr;
-        }
+        T operator&();
+
+        /**
+         * Obtener dirección de memoria del dato almacenado
+         * */
+        /*
+         * Guardar ID generado en el Mpointer
+         * */
+        void save_ID(int ID_GC);
+        T *get_addres();
+
+        /*
+         * Método destrcutor de la clase MPointer
+         * */
+        //~MPointer(){std::cout << "mpointer deleted" << std::endl;};
+
+        //MPointer<T> operator*(MPointer<T> mPointer);
     };
 
+
+
 /////////////////////////////////////////////////////
-// Aqui si funciona el muy banano.
-    template<class T>
 /**
  * Metodo que se encarga de devolver un puntero al utilizar *.
  * @tparam T
  * @param mPointer
  * @return
  */
+
+    template<class T>
     MPointer<T> operator*(MPointer<T> mPointer) {
+        std::cout << mPointer.mPointer1 << " mpointerrr*" << "\n";
         return mPointer;
+
     }
 
 }
 
-#endif //MPOINTERS_MPOINTERS_H
+
+#endif //MPOINTERS_MPOINTER_H

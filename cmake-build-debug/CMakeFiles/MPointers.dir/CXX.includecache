@@ -6,11 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/jonathan/CLionProjects/Progra#1MPointers/MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/Estrutures/Simple_list.h
+iostream
+-
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
+
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.cpp
+MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
+MPointerGC.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.h
+
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
+cstdlib
+-
 iostream
 -
 
-/home/jonathan/CLionProjects/Progra#1MPointers/main.cpp
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.h
+tgmath.h
+-
+MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
+../Estrutures/Simple_list.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/Estrutures/Simple_list.h
+
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/main.cpp
 MPointer/MPointer.h
-/home/jonathan/CLionProjects/Progra#1MPointers/MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
+MPointer/MPointerGC.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.h
 
