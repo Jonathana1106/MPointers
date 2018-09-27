@@ -7,7 +7,7 @@
 
 #include <tgmath.h>
 #include "MPointer.h"
-#include "../Estrutures/Simple_list.h"
+#include "../Structures/Simple_list.h"
 
 template <class T>
 class MPointerGC {

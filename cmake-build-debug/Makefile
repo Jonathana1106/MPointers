@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo
+CMAKE_SOURCE_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-deb
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target

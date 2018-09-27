@@ -50,19 +50,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo
+CMAKE_SOURCE_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug"
 
 #=============================================================================
 # Target rules for target CMakeFiles/MPointers.dir
@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-deb
 CMakeFiles/MPointers.dir/all:
 	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/depend
 	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target MPointers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" --progress-num=1,2,3 "Built target MPointers"
 .PHONY : CMakeFiles/MPointers.dir/all
 
 # Include target in all.
@@ -81,9 +81,9 @@ all: CMakeFiles/MPointers.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MPointers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MPointers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/MPointers.dir/rule
 
 # Convenience name for target.
