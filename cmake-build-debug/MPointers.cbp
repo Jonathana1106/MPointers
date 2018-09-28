@@ -93,6 +93,24 @@
 		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointerGC.h">
 			<Option target="MPointers"/>
 		</Unit>
+		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Sort/BubbleSort.h">
+			<Option target="MPointers"/>
+		</Unit>
+		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Sort/InsertionSort.h">
+			<Option target="MPointers"/>
+		</Unit>
+		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Partition.h">
+			<Option target="MPointers"/>
+		</Unit>
+		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Sort/PrintSort.h">
+			<Option target="MPointers"/>
+		</Unit>
+		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Sort/QuickSort.h">
+			<Option target="MPointers"/>
+		</Unit>
+		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Swap.h">
+			<Option target="MPointers"/>
+		</Unit>
 		<Unit filename="/home/jonathan/CLionProjects/MPointersProgra#1/Structures/Simple_list.h">
 			<Option target="MPointers"/>
 		</Unit>

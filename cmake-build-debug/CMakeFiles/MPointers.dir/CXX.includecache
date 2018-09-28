@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointer.cpp
-MPointer.h
-/home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointer.h
-MPointerGC.h
-/home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointerGC.h
-
 /home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointer.h
 cstdlib
 -
@@ -26,6 +20,36 @@ MPointer.h
 ../Structures/Simple_list.h
 /home/jonathan/CLionProjects/MPointersProgra#1/Structures/Simple_list.h
 
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/BubbleSort.h
+cstdio
+-
+iostream
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/iostream
+Swap.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Swap.h
+
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/InsertionSort.h
+cstdio
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/cstdio
+
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Partition.h
+Swap.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Swap.h
+
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/PrintSort.h
+cstdio
+-
+array
+-
+
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/QuickSort.h
+cstdio
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/cstdio
+Partition.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Partition.h
+
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/Swap.h
+
 /home/jonathan/CLionProjects/MPointersProgra#1/Structures/Simple_list.h
 iostream
 -
@@ -37,4 +61,12 @@ MPointer/MPointer.h
 /home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointer.h
 MPointer/MPointerGC.h
 /home/jonathan/CLionProjects/MPointersProgra#1/MPointer/MPointerGC.h
+Sort/BubbleSort.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/BubbleSort.h
+Sort/InsertionSort.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/InsertionSort.h
+Sort/QuickSort.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/QuickSort.h
+Sort/PrintSort.h
+/home/jonathan/CLionProjects/MPointersProgra#1/Sort/PrintSort.h
 

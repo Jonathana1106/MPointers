@@ -1,12 +1,42 @@
 #include "MPointer/MPointer.h"
 #include "MPointer/MPointerGC.h"
-
+#include "Sort/BubbleSort.h"
+#include "Sort/InsertionSort.h"
+#include "Sort/QuickSort.h"
+#include "Sort/PrintSort.h"
 
 using namespace mpointer;
 
 int main() {
 
-    MPointer<double > myPtr;
+
+    cout << "QuickSort \n";
+
+    int arr[] = {10, 7, 8, 9, 1, 5};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    quickSort(arr, 0, n - 1);
+    printSort(arr, n);
+    cout << "\n";
+
+
+    cout << "InsertionSort. \n";
+
+    int arr2[] = {12, 11, 13, 5, 6};
+    int m = sizeof(arr2) / sizeof(arr2[0]);
+    insertionSort(arr2, m);
+    printSort(arr2, m);
+    cout << "\n";
+
+    cout << "BubbleSort. \n";
+
+    int array[] = {0, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+    int o = sizeof(array) / sizeof(array[0]);
+    bubbleSort(array, o);
+    printSort(array, o);
+    cout << "\n";
+
+
+    MPointer<double> myPtr;
     myPtr.New();
 
     //myPtr.New();
@@ -41,8 +71,8 @@ int main() {
 
     myPtr3 = myPtr2;
 
-    MPointerGC<int>* mPointerGC = MPointerGC<int>::getInstance();
-    MPointerGC<int>* mPointerGC2 = MPointerGC<int>::getInstance();
+    MPointerGC<int> *mPointerGC = MPointerGC<int>::getInstance();
+    MPointerGC<int> *mPointerGC2 = MPointerGC<int>::getInstance();
 
     int id1, id2, id3;
     id1 = mPointerGC->generate_ID(myPtr2);
@@ -64,12 +94,12 @@ int main() {
     myPtr3.show();
 
 
-    std::cout << mPointerGC <<  "\n" << mPointerGC2 <<  "\n"
-    << valor
-    <<  "\n"
-    << &myPtr
-    <<  "\n"
-    << myPtr.operator&();
+    std::cout << mPointerGC << "\n" << mPointerGC2 << "\n"
+              << valor
+              << "\n"
+              << &myPtr
+              << "\n"
+              << myPtr.operator&();
 
     mPointerGC->show_list();
 

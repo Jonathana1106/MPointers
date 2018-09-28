@@ -8,6 +8,12 @@ CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o: ../Structures/Simple_list.h
 
 CMakeFiles/MPointers.dir/main.cpp.o: ../MPointer/MPointer.h
 CMakeFiles/MPointers.dir/main.cpp.o: ../MPointer/MPointerGC.h
+CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/BubbleSort.h
+CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/InsertionSort.h
+CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/Partition.h
+CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/PrintSort.h
+CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/QuickSort.h
+CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/Swap.h
 CMakeFiles/MPointers.dir/main.cpp.o: ../Structures/Simple_list.h
 CMakeFiles/MPointers.dir/main.cpp.o: ../main.cpp
 
