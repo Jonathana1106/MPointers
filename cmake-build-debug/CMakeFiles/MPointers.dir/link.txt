@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/MPointers.dir/main.cpp.o CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o  -o MPointers 
+/usr/bin/c++  -g   CMakeFiles/MPointers.dir/main.cpp.o CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.o CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.o  -o MPointers 

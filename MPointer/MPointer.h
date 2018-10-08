@@ -27,10 +27,10 @@ namespace mpointer {
          */
 
 
-        int ID; // Id dado por MPointerGC
 
     public:
 
+        int ID; // Id dado por MPointerGC
         T *ptr; // Puntero template.
         MPointer<T> *mPointer1; // Puntero a la instancia.
 

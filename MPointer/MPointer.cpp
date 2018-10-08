@@ -7,18 +7,19 @@
 
 
 
-
 template<class T>
 mpointer::MPointer<T> mpointer::MPointer<T>::New() {
     {
-        MPointerGC<T> *mPointerGC = MPointerGC<T>::getInstance();
+        MPointerGC *mPointerGC = MPointerGC::getInstance();
+        std::cout << mPointerGC << " Instance in MPointer of GC "<< "\n";
         //static T *ptr;
+        T var;
         std::cout << this << " MPointer instancia " << "\n";
         mPointer1 = this;
-        std::cout << &mPointer1 << " mpointerrr1" << "\n";
-        std::cout << mPointer1 << " mpointerrr2" << "\n";
+        //std::cout << &mPointer1 << " mpointerrr1" << "\n";
+        //std::cout << mPointer1 << " mpointerrr2" << "\n";
         ptr = (T *) malloc(sizeof(T));
-        ID = mPointerGC->generate_ID(*this);
+        ID = mPointerGC->generate_ID(this);
 
     }
 }
@@ -52,7 +53,6 @@ void MPointer<T>::show() {
 template<class T>
 void MPointer<T>::save_ID(int ID_GC) {
     ID = ID_GC;
-
 }
 
 

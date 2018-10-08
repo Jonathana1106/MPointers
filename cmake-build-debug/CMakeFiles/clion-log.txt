@@ -1,4 +1,4 @@
-/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jonathan/CLionProjects/MPointersProgra#1
+/home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/elias/Escritorio/Proyecto1_J_G_respaldo
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug
+-- Build files have been written to: /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug

@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1"
+CMAKE_SOURCE_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-d
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/jonathan/CLion-2018.2.3/clion-2018.2.3/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/elias/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/jonathan/CLionProjects/MPointersProgra#1/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elias/Escritorio/Proyecto1_J_G_respaldo/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,60 @@ MPointer/MPointer.cpp.s:
 	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.s
 .PHONY : MPointer/MPointer.cpp.s
 
+MPointer/MPointerGC.o: MPointer/MPointerGC.cpp.o
+
+.PHONY : MPointer/MPointerGC.o
+
+# target to build an object file
+MPointer/MPointerGC.cpp.o:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.o
+.PHONY : MPointer/MPointerGC.cpp.o
+
+MPointer/MPointerGC.i: MPointer/MPointerGC.cpp.i
+
+.PHONY : MPointer/MPointerGC.i
+
+# target to preprocess a source file
+MPointer/MPointerGC.cpp.i:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.i
+.PHONY : MPointer/MPointerGC.cpp.i
+
+MPointer/MPointerGC.s: MPointer/MPointerGC.cpp.s
+
+.PHONY : MPointer/MPointerGC.s
+
+# target to generate assembly for a file
+MPointer/MPointerGC.cpp.s:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.s
+.PHONY : MPointer/MPointerGC.cpp.s
+
+Structures/Simple_list.o: Structures/Simple_list.cpp.o
+
+.PHONY : Structures/Simple_list.o
+
+# target to build an object file
+Structures/Simple_list.cpp.o:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.o
+.PHONY : Structures/Simple_list.cpp.o
+
+Structures/Simple_list.i: Structures/Simple_list.cpp.i
+
+.PHONY : Structures/Simple_list.i
+
+# target to preprocess a source file
+Structures/Simple_list.cpp.i:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.i
+.PHONY : Structures/Simple_list.cpp.i
+
+Structures/Simple_list.s: Structures/Simple_list.cpp.s
+
+.PHONY : Structures/Simple_list.s
+
+# target to generate assembly for a file
+Structures/Simple_list.cpp.s:
+	$(MAKE) -f CMakeFiles/MPointers.dir/build.make CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.s
+.PHONY : Structures/Simple_list.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +243,12 @@ help:
 	@echo "... MPointer/MPointer.o"
 	@echo "... MPointer/MPointer.i"
 	@echo "... MPointer/MPointer.s"
+	@echo "... MPointer/MPointerGC.o"
+	@echo "... MPointer/MPointerGC.i"
+	@echo "... MPointer/MPointerGC.s"
+	@echo "... Structures/Simple_list.o"
+	@echo "... Structures/Simple_list.i"
+	@echo "... Structures/Simple_list.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

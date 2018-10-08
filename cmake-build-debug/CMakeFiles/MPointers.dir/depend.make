@@ -6,6 +6,15 @@ CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o: ../MPointer/MPointer.h
 CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o: ../MPointer/MPointerGC.h
 CMakeFiles/MPointers.dir/MPointer/MPointer.cpp.o: ../Structures/Simple_list.h
 
+CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.o: ../MPointer/MPointer.h
+CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.o: ../MPointer/MPointerGC.cpp
+CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.o: ../MPointer/MPointerGC.h
+CMakeFiles/MPointers.dir/MPointer/MPointerGC.cpp.o: ../Structures/Simple_list.h
+
+CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.o: ../MPointer/MPointer.h
+CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.o: ../Structures/Simple_list.cpp
+CMakeFiles/MPointers.dir/Structures/Simple_list.cpp.o: ../Structures/Simple_list.h
+
 CMakeFiles/MPointers.dir/main.cpp.o: ../MPointer/MPointer.h
 CMakeFiles/MPointers.dir/main.cpp.o: ../MPointer/MPointerGC.h
 CMakeFiles/MPointers.dir/main.cpp.o: ../Sort/BubbleSort.h
