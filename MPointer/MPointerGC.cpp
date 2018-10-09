@@ -50,9 +50,37 @@ bool MPointerGC::free_mpointer(int id, mpointer::MPointer<double> mPointer) {
 }
 
 int MPointerGC::add_count(int id) {
+    Node_s *node_s = nullptr;
+    node_s = simple_list.search(id);
+    if (node_s != nullptr){
+        node_s->counter += 1;
+    } else{
+        std::cout << "ID doesn't exist " << id << std::endl;
+    }
     //buscar nodo con el id
     //sumar conteo de referencias
     return 0;
+}
+
+int MPointerGC::delete_count(int id) {
+    Node_s *node_s = nullptr;
+    node_s = simple_list.search(id);
+    if (node_s != nullptr){
+        node_s->counter -= 1;
+    } else{
+        std::cout << "ID doesn't exist " << id << std::endl;
+    }
+    return 0;
+}
+
+void MPointerGC::change_id(int id, int id2) {
+    Node_s *node_s = nullptr;
+    node_s = simple_list.search(id);
+    if (node_s != nullptr){
+        node_s->ID = id2;
+    } else{
+        std::cout << "ID doesn't exist " << id << std::endl;
+    }
 }
 
 MPointerGC::MPointerGC() {
@@ -73,35 +101,35 @@ int MPointerGC::show_list(int o) {
 
 int MPointerGC::generate_ID(mpointer::MPointer<int> *mPointer) {
     ID = rand() % 100000;
-    std::cout << ID << " ID " << &mPointer;
-    std::cout << "\n";
+    std::cout << " Flaaaag";
+    //std::cout << ID << " ID " << &mPointer;
+    std::cout << "\n" << "Flaaaaaaaaaag ";
     //crear el nodo, asignar el id y la direccion de memoria
-    Node_s node_s;
-    node_s.type = "int";
-    node_s.ID = ID;
-    node_s.int_mPointer = mPointer->mPointer1;
-    node_s.counter = 0;
-    mPointer->ID = node_s.ID;
-    simple_list.insert(&node_s);
+    std::cout << " Flaaaag" << &mPointer;
+    Node_s* node_s = new Node_s(1, 0, "int", 0, 'o', 0.0, nullptr);
+    node_s->type = "int";
+    node_s->ID = ID;
+    node_s->int_mPointer = mPointer->mPointer1;
+    mPointer->ID = node_s->ID;
+    simple_list.insert(node_s);
     simple_list.print_list();
-    return 0;
+    return ID;
 }
 
-char MPointerGC::generate_ID(mpointer::MPointer<char> *mPointer) {
+int MPointerGC::generate_ID(mpointer::MPointer<char> *mPointer) {
     ID = rand() % 100000;
     std::cout << ID << " ID " << &mPointer;
     std::cout << "\n";
     //crear el nodo, asignar el id y la direccion de memoria
-    Node_s node_s;
-    node_s.type = "char";
-    node_s.ID = ID;
-    node_s.char_mPointer = mPointer->mPointer1;
-    node_s.counter = 0;
+    Node_s* node_s = new Node_s(1, 0, "char", 0, 'o', 0.0, nullptr);
+    node_s->type = "char";
+    node_s->ID = ID;
+    node_s->char_mPointer = mPointer->mPointer1;
 
-    mPointer->ID = node_s.ID;
-    simple_list.insert(&node_s);
+    mPointer->ID = node_s->ID;
+    simple_list.insert(node_s);
     simple_list.print_list();
-    return 0;
+    return ID;
 }
 
 double MPointerGC::generate_ID(mpointer::MPointer<double> *mPointer) {
@@ -109,16 +137,15 @@ double MPointerGC::generate_ID(mpointer::MPointer<double> *mPointer) {
     std::cout << ID << " ID " << &mPointer;
     std::cout << "\n";
     //crear el nodo, asignar el id y la direccion de memoria
-    Node_s node_s;
-    node_s.type = "double";
-    node_s.ID = ID;
-    node_s.double_mPointer = mPointer->mPointer1;
-    node_s.counter = 0;
+    Node_s* node_s = new Node_s(1, 0, "double", 0, 'o', 0.0, nullptr);
+    node_s->type = "double";
+    node_s->ID = ID;
+    node_s->double_mPointer = mPointer->mPointer1;
 
-    mPointer->ID = node_s.ID;
-    simple_list.insert(&node_s);
+    mPointer->ID = node_s->ID;
+    simple_list.insert(node_s);
     simple_list.print_list();
-    return 0;
+    return ID;
 }
 
 void MPointerGC::turn_on_GC() {

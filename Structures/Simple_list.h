@@ -12,26 +12,30 @@ using namespace mpointer;
 
 class Node_s {
 public:
+    Node_s(int counter, int ID, const std::string &type, int int_data, char char_data, double double_data,
+           Node_s *next);
+
+public:
     int counter = 1;
     int ID;
     std::string type;
-    MPointer<int> *int_mPointer;
-    MPointer<char> *char_mPointer;
-    MPointer<double> *double_mPointer;
+    MPointer<int> *int_mPointer = nullptr;
+    MPointer<char> *char_mPointer = nullptr;
+    MPointer<double> *double_mPointer = nullptr;
     //T info;
     int int_data;
     char char_data;
     double double_data;
     double size;
     //Node_s* previous;
-    Node_s* next;
+    Node_s* next = nullptr;
 };
 
 
 class Simple_list {
 public:
 
-    Node_s* head;
+    Node_s* head = nullptr;
     //Node_s<T>* last;
 
     Simple_list();

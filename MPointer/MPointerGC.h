@@ -28,12 +28,14 @@ private:
 
 public:
     int generate_ID(mpointer::MPointer<int>*);
-    char generate_ID(mpointer::MPointer<char>*);
+    int generate_ID(mpointer::MPointer<char>*);
     double generate_ID(mpointer::MPointer<double>*);
     bool free_mpointer(int id, mpointer::MPointer<int>);
     bool free_mpointer(int id, mpointer::MPointer<char>);
     bool free_mpointer(int id, mpointer::MPointer<double>);
     int add_count(int id);
+    int delete_count(int id);
+    void change_id(int id, int id2);
     int show_list(int o);
     void turn_on_GC();
 

@@ -31,7 +31,11 @@ void MPointer<T>::operator=(T ptra) {
 
 template<class T>
 void MPointer<T>::operator=(MPointer<T> mPointer) {
+    MPointerGC *mPointerGC = MPointerGC::getInstance();
+    mPointerGC->add_count(mPointer.ID);
+    //mPointerGC->change_id(ID, mPointer.ID);
     this->ptr = mPointer.ptr;
+    this->reference_ID = mPointer.ID;
 
 }
 
@@ -55,6 +59,24 @@ void MPointer<T>::save_ID(int ID_GC) {
     ID = ID_GC;
 }
 
+template<class T>
+int MPointer<T>::say_hello() {
+    std::cout << "Holaaa" << '\n';
+    return 0;
+}
+
+template<class T>
+void MPointer<T>::destructor() {
+    std::cout << "reference to mpointer deleted" << std::endl;
+    MPointerGC *mPointerGC = MPointerGC::getInstance();
+    this->mPointer1 = nullptr;
+    mPointerGC->delete_count(this->ID);
+    if(reference_ID != 0){
+        mPointerGC->delete_count(reference_ID);
+    }
+    this->ID = 0;
+}
+
 
 template mpointer::MPointer<int> mpointer::MPointer<int>::New();
 template mpointer::MPointer<char> mpointer::MPointer<char>::New();
@@ -74,3 +96,6 @@ template double *mpointer::MPointer<double>::get_addres();
 template void mpointer::MPointer<int>::show();
 template void mpointer::MPointer<char>::show();
 template void mpointer::MPointer<double>::show();
+template void mpointer::MPointer<int>::destructor();
+template void mpointer::MPointer<char>::destructor();
+template void mpointer::MPointer<double>::destructor();

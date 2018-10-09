@@ -3,17 +3,28 @@
 //
 #include "Simple_list.h"
 
-void Simple_list::insert(Node_s *newNode) {
+void Simple_list::insert(Node_s* newNode) {
 // Is the first node
+    //Node_s temp = *head;
+
     if (head != nullptr) {
         // The list has more elements
+        std::cout << " First head"<< head << std::endl;
         newNode->next = head;
+        std::cout << '\n' << "Pointer next of head " << newNode->next << " type " << newNode->next->type << '\n';
+        //if(head->next != nullptr)
+          //  std::cout << "Pointer to next of head " << head->next << " type " << head->next->type << '\n';
         //newNode->next->previous = newNode;
     }else {
         newNode->next = nullptr;
+        std::cout << "First mpointer " << '\n';
         //last = newNode;
     }
+    std::cout << "Pointer head " << &newNode << " type ------" << newNode->type << '\n';
+    //std::cout << "Pointer head " << head << " type ------" << head->type << '\n';
     head = newNode;
+    std::cout << "Pointer head " << &newNode << " type ------" << newNode->type << '\n';
+    //std::cout << "Pointer head " << head << " type ------" << head->type << '\n' << "+++++++++++++++++++++++++"<< '\n';
     size++;
 
 }
@@ -58,8 +69,8 @@ Node_s *Simple_list::search(int searched_id) {
 void Simple_list::print_list() {
     std::cout << "Size: " << size << " Element In The Linked List Are : " << "\n";
     Node_s *disp = head;
-    int n;
-    while(size != 0)
+    int n = size;
+    while(n != 0)
     {
         if(disp->type == "int"){
             std::cout<<" ID "<< disp->ID << " Address de la instancia " << disp->int_mPointer;
@@ -71,9 +82,9 @@ void Simple_list::print_list() {
             std::cout<<" ID "<< disp->ID << " Address de la instancia " << disp->double_mPointer;
         }
 
-        std::cout << " The number of call is " << disp->counter <<"\n";
+        std::cout << " Instancia del nodo " << disp << " The number of call is " << disp->counter <<"\n";
         //disp->mPointer->show();
-        if(disp->next == nullptr || head->next == nullptr || size == n)
+        if(disp->next == nullptr || head->next == nullptr)
         {
             disp = nullptr;
             delete(disp);
@@ -82,7 +93,7 @@ void Simple_list::print_list() {
         disp = disp->next;
         //break;
         //disp++;
-        n++;
+        n--;
     }
 }
 
@@ -98,4 +109,14 @@ Simple_list::Simple_list() {
 
 int Simple_list::show_size_list() {
     return size;
+}
+
+Node_s::Node_s(int counter, int ID, const std::string &type, int int_data, char char_data, double double_data,
+               Node_s *next) : counter(counter), ID(ID), type(type),  int_data(int_data),
+                               char_data(char_data), double_data(double_data), next(next) {
+    std::cout << "caca" << std::endl;
+    this->int_mPointer = nullptr;
+    this->char_mPointer = nullptr;
+    this->double_mPointer = nullptr;
+    std::cout << "caca" << std::endl;
 }

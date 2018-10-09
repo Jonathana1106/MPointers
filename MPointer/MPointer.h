@@ -25,13 +25,14 @@ namespace mpointer {
         /**
          * Variables de la clase.
          */
-
+        int reference_ID = 0;
 
 
     public:
 
         int ID; // Id dado por MPointerGC
         T *ptr; // Puntero template.
+        int say_hello();
         MPointer<T> *mPointer1; // Puntero a la instancia.
 
         /**
@@ -84,7 +85,7 @@ namespace mpointer {
         /*
          * Método destrcutor de la clase MPointer
          * */
-        //~MPointer(){std::cout << "mpointer deleted" << std::endl;};
+        void destructor();
 
         //MPointer<T> operator*(MPointer<T> mPointer);
     };

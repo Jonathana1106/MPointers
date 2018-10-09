@@ -88,10 +88,8 @@ void *turn_on_GC(void* ptr) {
 
 void *shell_mpointer(void* ptr){
 
-    //MPointer<double> myPtr{};
-    //myPtr.New();
-
-    //myPtr.New();
+    MPointer<int> myPtr{};
+    myPtr.New();
 
     MPointer<int> myPtr2{};
 
@@ -109,27 +107,19 @@ void *shell_mpointer(void* ptr){
 
     myPtr5.New();
 
-/////////////////////////////////////////////////////////
-//////////////////Caution////////////////////////////////
-//    MPointer<int> myPtr2 = MPointer<int>::New();
-/////////////////////////////////////////////////////////
-
 
     *myPtr2 = 5;
+    myPtr = myPtr2;
 
     //myPtr.operator=(12);
 
     //int valor = &myPtr;
 
     *myPtr3 = 8;
+    std::cout << myPtr.ID << std::endl;
+    myPtr.destructor();
+    myPtr3.destructor();
 
-    //MPointerGC<int> *mPointerGC = MPointerGC<int>::getInstance();
-
-    int id1, id2, id3;
-    //id1 = mPointerGC->generate_ID(myPtr2);
-    //id2 = mPointerGC->generate_ID(myPtr3);
-    //id3 = mPointerGC->generate_ID(myPtr5);
-    //mPointerGC->generate_ID(myPtr4);
 
     std::cout << mPointerGC << "\n";
     //mPointerGC->free_mpointer(id1, myPtr2);
@@ -147,15 +137,9 @@ void *shell_mpointer(void* ptr){
     //myPtr3.show();
 
 
-    /*  std::cout << mPointerGC << "\n" << "\n"
-                << valor
-                << "\n"
-                << &myPtr
-                << "\n"
-                << myPtr.operator&();
-  */
+
+
     std::cout << "---------------------------------------------------" << "\n";
-    //mPointerGC->show_list(1);
 }
 
 //g++ -pthread /home/elias/Escritorio/Proyecto1_J_G_respaldo/main.cpp /home/elias/Escritorio/Proyecto1_J_G_respaldo/Structures/Simple_list.cpp /home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.cpp /home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.cpp -o mpointer
