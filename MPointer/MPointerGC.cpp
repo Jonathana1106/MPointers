@@ -101,11 +101,8 @@ int MPointerGC::show_list(int o) {
 
 int MPointerGC::generate_ID(mpointer::MPointer<int> *mPointer) {
     ID = rand() % 100000;
-    std::cout << " Flaaaag";
     //std::cout << ID << " ID " << &mPointer;
-    std::cout << "\n" << "Flaaaaaaaaaag ";
     //crear el nodo, asignar el id y la direccion de memoria
-    std::cout << " Flaaaag" << &mPointer;
     Node_s* node_s = new Node_s(1, 0, "int", 0, 'o', 0.0, nullptr);
     node_s->type = "int";
     node_s->ID = ID;
@@ -154,47 +151,53 @@ void MPointerGC::turn_on_GC() {
     for(;;)
     {
 
-        std::cout << "Running garbage collector--------------------------" << "\n";
+        std::cout << "Running garbage collector--------------------------" << std::endl;
         // Sleep for 50*1000ms
         pthread_mutex_lock(&mutex1);
+        simple_list.run_garbage_collector();
         simple_list.print_list();
         pthread_mutex_unlock(&mutex1);
-        std::cout << "Stopping garbage collector--------------------------" << "\n";
+        std::cout << "Stopping garbage collector--------------------------" << std::endl;
         usleep(10000);
-        std::cout << "Running garbage collector--------------------------" << "\n";
+        std::cout << "Running garbage collector--------------------------" << std::endl;
         // Sleep for 50*1000ms
         pthread_mutex_lock(&mutex1);
+        simple_list.run_garbage_collector();
         simple_list.print_list();
         pthread_mutex_unlock(&mutex1);
-        std::cout << "Stopping garbage collector--------------------------" << "\n";
+        std::cout << "Stopping garbage collector--------------------------" << std::endl;
         usleep(10000);
-        std::cout << "Running garbage collector--------------------------" << "\n";
+        std::cout << "Running garbage collector--------------------------" << std::endl;
         // Sleep for 50*1000ms
         pthread_mutex_lock(&mutex1);
+        simple_list.run_garbage_collector();
         simple_list.print_list();
         pthread_mutex_unlock(&mutex1);
-        std::cout << "Stopping garbage collector--------------------------" << "\n";
+        std::cout << "Stopping garbage collector--------------------------" << std::endl;
         usleep(10000);
-        std::cout << "Running garbage collector--------------------------" << "\n";
+        std::cout << "Running garbage collector--------------------------" << std::endl;
         // Sleep for 50*1000ms
         pthread_mutex_lock(&mutex1);
+        simple_list.run_garbage_collector();
         simple_list.print_list();
         pthread_mutex_unlock(&mutex1);
-        std::cout << "Stopping garbage collector--------------------------" << "\n";
+        std::cout << "Stopping garbage collector--------------------------" << std::endl;
         usleep(10000);
-        std::cout << "Running garbage collector--------------------------" << "\n";
+        std::cout << "Running garbage collector--------------------------" << std::endl;
         // Sleep for 50*1000ms
         pthread_mutex_lock(&mutex1);
+        simple_list.run_garbage_collector();
         simple_list.print_list();
         pthread_mutex_unlock(&mutex1);
-        std::cout << "Stopping garbage collector--------------------------" << "\n";
+        std::cout << "Stopping garbage collector--------------------------" << std::endl;
         usleep(10000);
-        std::cout << "Running garbage collector--------------------------" << "\n";
+        std::cout << "Running garbage collector--------------------------" << std::endl;
         // Sleep for 50*1000ms
         pthread_mutex_lock(&mutex1);
+        simple_list.run_garbage_collector();
         simple_list.print_list();
         pthread_mutex_unlock(&mutex1);
-        std::cout << "Stopping garbage collector--------------------------" << "\n";
+        std::cout << "Stopping garbage collector--------------------------" << std::endl;
         usleep(10000);
         std::cin >> in;
         if (in == 's')

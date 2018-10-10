@@ -39,12 +39,15 @@ void Simple_list::remove(Node_s *deleteNode) {
         size--;
     }
     else {
-        while (current != NULL) {
+        std::cout << "Error" << std::endl;
+        while (current != nullptr) {
             if (deleteNode == next) {
                 current->next = next->next;
                 delete next;
                 size--;
             }
+            current = current->next;
+            next = next->next;
         }
     }
 }
@@ -99,6 +102,27 @@ void Simple_list::print_list() {
 
 
 
+void Simple_list::run_garbage_collector() {
+    Node_s *disp = head;
+    int n = size;
+    while(n != 0)
+    {
+        //std::cout << "Error1" << std::endl;
+        if(disp->counter == 0){
+            remove(disp);
+            break;
+        }
+        if(disp->next == nullptr)
+        {
+            disp = nullptr;
+            delete(disp);
+            break;
+        }
+        disp = disp->next;
+        n--;
+    }
+}
+
 void Simple_list::insert_size(double n) {
 }
 
@@ -114,9 +138,7 @@ int Simple_list::show_size_list() {
 Node_s::Node_s(int counter, int ID, const std::string &type, int int_data, char char_data, double double_data,
                Node_s *next) : counter(counter), ID(ID), type(type),  int_data(int_data),
                                char_data(char_data), double_data(double_data), next(next) {
-    std::cout << "caca" << std::endl;
     this->int_mPointer = nullptr;
     this->char_mPointer = nullptr;
     this->double_mPointer = nullptr;
-    std::cout << "caca" << std::endl;
 }

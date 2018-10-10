@@ -8,7 +8,9 @@
 #include <cstdio>
 #include "iostream"
 #include "Swap.h"
+#include "../MPointer/MPointer.h"
 
+using namespace mpointer;
 using namespace std;
 
 /**
@@ -16,14 +18,18 @@ using namespace std;
  * @param arr
  * @param n
  */
-void bubbleSort(int arr[], int n) {
+void bubbleSort(MPointer<int> array[], int n) {
     int i, j;
     bool swapped;
+    int temp;
+
     for (i = 0; i < n - 1; i++) {
-        swapped = false;
+        swapped = true;
         for (j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                swap(&arr[j], &arr[j + 1]);
+            if (&array[j] >= &array[j+1]) {
+                temp = &array[j];
+                *array[j] = &array[j+1];
+                *array[j+1] = temp;
                 swapped = true;
             }
         }

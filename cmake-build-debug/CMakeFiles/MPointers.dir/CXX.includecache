@@ -6,24 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.cpp
-MPointer.h
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
-MPointerGC.h
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.h
-
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 cstdlib
 -
 iostream
--
-
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.cpp
-MPointerGC.h
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.h
-pthread.h
--
-unistd.h
 -
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointerGC.h
@@ -41,32 +27,40 @@ iostream
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/iostream
 Swap.h
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/Swap.h
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/InsertionSort.h
 cstdio
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/cstdio
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/Partition.h
 Swap.h
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/Swap.h
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/PrintSort.h
 cstdio
 -
 array
 -
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/QuickSort.h
 cstdio
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/cstdio
 Partition.h
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/Partition.h
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Sort/Swap.h
-
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/Structures/Simple_list.cpp
-Simple_list.h
-/home/elias/Escritorio/Proyecto1_J_G_respaldo/Structures/Simple_list.h
+../MPointer/MPointer.h
+/home/elias/Escritorio/Proyecto1_J_G_respaldo/MPointer/MPointer.h
 
 /home/elias/Escritorio/Proyecto1_J_G_respaldo/Structures/Simple_list.h
 iostream

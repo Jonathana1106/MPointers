@@ -7,23 +7,25 @@
 
 
 #include "cstdio"
+#include "../MPointer/MPointer.h"
 
+using namespace mpointer;
 /**
  * Metodo que se encarga de realizar un ordenamiento mediante el algoritmo InsertionSort.
  * @param arr
  * @param n
  */
-void insertionSort(int arr[], int n) {
+void insertionSort(MPointer<int> arr[], int n) {
     int i, key, j;
     for (i = 1; i < n; i++) {
-        key = arr[i];
+        key = &arr[i];
         j = i - 1;
 
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
+        while (j >= 0 && &arr[j] > key) {
+            *arr[j + 1] = &arr[j];
             j = j - 1;
         }
-        arr[j + 1] = key;
+        *arr[j + 1] = key;
     }
 }
 

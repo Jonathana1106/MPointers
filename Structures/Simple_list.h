@@ -46,6 +46,7 @@ public:
     Node_s *search(int searched_id);
     int show_size_list();
     void print_list();
+    void run_garbage_collector();
 private:
     int size{};
     std::string last_type;

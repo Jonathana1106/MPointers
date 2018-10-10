@@ -5,11 +5,15 @@
 #ifndef MPOINTERS_SWAP_H
 #define MPOINTERS_SWAP_H
 
+#include "../MPointer/MPointer.h"
+
+using namespace mpointer;
+
 template<class T>
 
-void swap(T *x, T *y) {
+void swap(MPointer<int> *x, MPointer<int> *y) {
 
-    T temp = *x;
+    MPointer<int> temp = *x;
     *x = *y;
     *y = temp;
 }

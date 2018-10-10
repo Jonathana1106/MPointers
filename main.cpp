@@ -48,30 +48,7 @@ int main() {
 
     std::cout << mPointerGC << " Instance in main of GC "<< "\n";
     exit(EXIT_SUCCESS);
-/*
-    cout << "QuickSort \n";
-
-    int arr[] = {10, 7, 8, 9, 1, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
-    quickSort(arr, 0, n - 1);
-    printSort(arr, n);
-    cout << "\n";
-
-    cout << "InsertionSort. \n";
-
-    int arr2[] = {12, 11, 13, 5, 6};
-    int m = sizeof(arr2) / sizeof(arr2[0]);
-    insertionSort(arr2, m);
-    printSort(arr2, m);
-    cout << "\n";
-
-    cout << "BubbleSort. \n";
-
-    int array[] = {0, 9, 8, 7, 6, 5, 4, 3, 2, 1};
-    int o = sizeof(array) / sizeof(array[0]);
-    bubbleSort(array, o);
-    printSort(array, o);
-    cout << "\n";*/
+/**/
 
 
 
@@ -107,6 +84,14 @@ void *shell_mpointer(void* ptr){
 
     myPtr5.New();
 
+    MPointer<int> myPtr6{};
+    myPtr6.New();
+
+    MPointer<int> myPtr7{};
+    myPtr7.New();
+
+    MPointer<int> myPtr8{};
+    myPtr8.New();
 
     *myPtr2 = 5;
     myPtr = myPtr2;
@@ -116,6 +101,48 @@ void *shell_mpointer(void* ptr){
     //int valor = &myPtr;
 
     *myPtr3 = 8;
+
+    *myPtr4 = 'n';
+    *myPtr5 = 2.2;
+    *myPtr6 = 12;
+    *myPtr7 = 7;
+    *myPtr8 = 23;
+
+/*
+    cout << "QuickSort \n";
+
+    MPointer<int> arr[] = {myPtr, myPtr2, myPtr3, myPtr6, myPtr7, myPtr8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printSort(arr, n);
+    std::cout << '\n';
+    quickSort(arr, 0, n - 1);
+    printSort(arr, n);
+    std::cout << "\n";
+*/
+
+    cout << "InsertionSort. \n";
+
+    MPointer<int> arr[] = {myPtr, myPtr2, myPtr3, myPtr6, myPtr7, myPtr8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printSort(arr, n);
+    std::cout << '\n';
+    insertionSort(arr, n);
+    printSort(arr, n);
+    cout << "\n";
+
+
+    /* cout << "BubbleSort. \n";
+
+    MPointer<int> arr[] = {myPtr, myPtr2, myPtr3, myPtr6, myPtr7, myPtr8};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printSort(arr, n);
+    cout << "\n";
+    bubbleSort(arr, n);
+    cout<< "Ordenado\n";
+    printSort(arr, n);
+    cout << "\n";*/
+    /*
+*/
     std::cout << myPtr.ID << std::endl;
     myPtr.destructor();
     myPtr3.destructor();

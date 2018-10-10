@@ -102,7 +102,6 @@ namespace mpointer {
 
     template<class T>
     MPointer<T> operator*(MPointer<T> mPointer) {
-        std::cout << mPointer.mPointer1 << " mpointerrr*" << "\n";
         return mPointer;
 
     }

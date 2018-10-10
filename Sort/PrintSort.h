@@ -7,12 +7,14 @@
 
 #include <cstdio>
 #include <array>
+#include "../MPointer/MPointer.h"
 
-template<class T>
+using namespace mpointer;
 
-void printSort(T *array, int size) {
+
+void printSort(MPointer<int> *array, int size) {
     for (int i = 0; i < size; i++)
-        printf("%d ", array[i]);
+        printf("%d ", &array[i]);
 }
 
 

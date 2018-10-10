@@ -6,21 +6,28 @@
 #define MPOINTERS_PARTITION_H
 
 #include "Swap.h"
+#include "../MPointer/MPointer.h"
 
-template<class T>
+using namespace mpointer;
 
-T partition(T array[], int low, int high) {
 
-    T pivot = array[high];
+int partition(MPointer<int> array[], int low, int high) {
+
+    MPointer<int> pivot = array[high];
     int i = (low - 1);
+    int temp;
 
     for (int j = low; j <= high - 1; j++) {
-        if (array[j] <= pivot) {
+        if (&array[j] <= &pivot) {
             i++;
-            swap(&array[i], &array[j]);
+            temp = &array[j];
+            *array[j] = &array[i];
+            *array[i] = temp;
         }
     }
-    swap(&array[i + 1], &array[high]);
+    temp = &array[high];
+    *array[high] = &array[i + 1];
+    *array[i + 1] = temp;
     return (i + 1);
 }
 
